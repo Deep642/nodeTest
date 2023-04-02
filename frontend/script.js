@@ -1,4 +1,4 @@
-fetch(`http://localhost:4000/`).then((data)=>{
+fetch(`https://cryptodata.onrender.com/`).then((data)=>{
     return data.json()
 }).then((response)=>{
     console.log(response)
