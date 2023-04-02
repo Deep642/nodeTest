@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>HodlInfo</title>
+</head>
+
+<body >
+    <div>
+        <div class="header">
+            <div class="f-head">
+                <h1 style="color:#5dc7c2">HODLINFO <span>.com</span></h1>
+                <h5 style="color:#5dc7c2"><span>Powered By</span> Finestreet</h5>
+            </div>
+            <div class="m-head">
+                <form class="selection">
+                    <select>
+                        <option value="INR">INR</option>
+                    </select>
+                </form>
+                <form class="selection">
+                    <select id="Crypto">
+                    </select>
+                </form>
+            </div>
+            <div class="b-head">
+                <div id="timer">60</div>
+                <div id="telegram">
+                    <a href="https://hodlinfo.com/connect/telegram">
+                        <i class="fa fa-telegram">Telegram</i>
+                    </a>
+                </div>
+                <div id="theme" onclick="myFunction()">Light</div>
+            </div>
+        </div>
+        <div class="info">
+            <div id="t-head" style="display: flex;">
+                <div >#</div>
+                <div>name</div>
+                <div>last</div>
+                <div>Buy/Sell</div>
+                <div>Volume</div>
+                <div>Base_unit</div>
+            </div>
+            <div id="hmm"></div>
+            <script src="script.js"></script>
+            <script>
+                var isDark=true;
+                function myFunction(){
+                    if(isDark){
+                      var bgAll=document.getElementsByTagName("body")
+                      bgAll[0].style.backgroundColor="#fff"
+                      var bgHmmDiv=document.querySelectorAll("#hmm>div")
+                      for(let i=0; i<bgHmmDiv.length; i++){
+                          bgHmmDiv[i].style.color = "black"
+                      }
+                      var selectDiv=document.querySelectorAll(".selection>select")
+                      for(let i=0; i<selectDiv.length; i++){
+                          selectDiv[i].style.color = "black"
+                      }
+                      var THEME=document.getElementById("theme")
+                      THEME.innerText="Dark"
+                      isDark=false;
+                    }
+                    else{
+                      var bgAll=document.getElementsByTagName("body")
+                      bgAll[0].style.backgroundColor="#191d28"
+                      var bgHmmDiv=document.querySelectorAll("#hmm>div")
+                      for(let i=0; i<bgHmmDiv.length; i++){
+                          bgHmmDiv[i].style.color = "white"
+                      }
+                      var selectDiv=document.querySelectorAll(".selection>select")
+                      for(let i=0; i<selectDiv.length; i++){
+                          selectDiv[i].style.color = "white"
+                      }
+                      var THEME=document.getElementById("theme")
+                      THEME.innerText="Light"
+                      isDark=true;
+                    }
+                }
+            </script>
+        </div>
+        <div class="footer">Copyright © 2019 HodlInfo.com</div>
+    </div>
+</body>
+
+</html>

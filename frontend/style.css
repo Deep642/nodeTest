@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap');
+body{
+    background-color: #191d28; 
+}
+.header{
+    display: flex;
+    width: 100%;
+    align-items:center;
+    justify-content: space-around;
+}
+.footer{
+   margin-top: 20px;
+   width: 100%;
+   display: flex;
+   text-align: center;
+   align-items:center;
+   justify-content: space-around;
+}
+.info{
+    width:110vw;
+}
+#hmm{
+    margin-left: 80px;
+    width: 80%;
+}
+#hmm div{
+width: 100%;
+align-items:center;
+justify-content: space-around;
+text-align: center;
+}
+#hmm > div{
+    /* max-width: 100rem; */
+    margin: 20px 0px;
+    padding: 10px 0px;
+    border-radius: 10px;
+    background-color: rgba(200, 200, 200,0.25);
+    font-family: Oswald;
+    font-size: 24px;
+    color:#fff;
+}
+#t-head{
+    margin-left: 80px;
+    width: 80%;
+    text-align: center;
+}
+#t-head div{
+    width: 100%;
+    align-items:center;
+    justify-content: space-around;
+}
+#t-head>div{
+    max-width: 100rem;
+    margin: 20px 0px;
+    padding: 10px 0px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-family: Oswald;
+    font-size: 24px;
+    color: rgba(168, 160, 160, 0.25);
+
+}
+.m-head{
+    display: flex;
+}
+.selection>select{
+    margin: 10px;
+    color: #fff;
+    background-color: rgba(200, 200, 200,0.25);
+    border: none;
+    padding: 5px 5px;
+    border-radius: 5px;
+}
+h1{
+margin-bottom: 0;
+margin-left: 0;
+}
+h5{
+    margin-top: 0;
+    margin-left: 0;
+}
+span{
+    color: rgba(200, 200, 200,0.25);
+}
+#telegram{
+    margin: 5px;
+    padding: 5px;
+    background-color: #5dc7c2;
+    border-radius: 20px;
+    border-color: #5dc7c2;
+    box-shadow: none;
+    cursor: pointer;
+}
+#telegram>a{
+    color: #fff;
+    text-decoration: none;
+}
+#timer{
+    margin: 5px;
+    padding: 5px;
+    border-radius: 50%;
+    border: 2px solid #5dc7c2;
+    color: #5dc7c2;
+    box-shadow: none;
+    cursor: pointer;
+}
+#theme{
+    margin: 5px;
+    padding: 5px;
+    background-color: #5dc7c2;
+    border-radius: 20px;
+    border-color: #5dc7c2;
+    box-shadow: none;
+    cursor: pointer;
+    color: #fff;
+}
+.b-head{
+    display: flex;
+}
+b-head>div{
+    
+}
