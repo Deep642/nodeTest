@@ -50,6 +50,7 @@
             <div id="hmm"></div>
             <script src="script.js"></script>
             <script>
+                //themechanging:-
                 var isDark = true;
                 function myFunction() {
                     if (isDark) {
@@ -83,12 +84,13 @@
                         isDark = true;
                     }
                 }
+                //for setting timer:-
                 var time=document.getElementById("timer")
                 function seconds(){
                     var p=60;
                     setInterval(()=>{
                       time.innerText=`${p--}`;
-                      if(p==1)p=60;
+                      if(p==0)p=60;
                     },1000)
                 }
                 seconds();
