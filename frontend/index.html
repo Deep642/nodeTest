@@ -10,7 +10,7 @@
     <title>HodlInfo</title>
 </head>
 
-<body >
+<body>
     <div>
         <div class="header">
             <div class="f-head">
@@ -29,7 +29,7 @@
                 </form>
             </div>
             <div class="b-head">
-                <div id="timer">60</div>
+                <div id="timer"></div>
                 <div id="telegram">
                     <a href="https://hodlinfo.com/connect/telegram">
                         <i class="fa fa-telegram">Telegram</i>
@@ -40,7 +40,7 @@
         </div>
         <div class="info">
             <div id="t-head" style="display: flex;">
-                <div >#</div>
+                <div>#</div>
                 <div>name</div>
                 <div>last</div>
                 <div>Buy/Sell</div>
@@ -50,39 +50,48 @@
             <div id="hmm"></div>
             <script src="script.js"></script>
             <script>
-                var isDark=true;
-                function myFunction(){
-                    if(isDark){
-                      var bgAll=document.getElementsByTagName("body")
-                      bgAll[0].style.backgroundColor="#fff"
-                      var bgHmmDiv=document.querySelectorAll("#hmm>div")
-                      for(let i=0; i<bgHmmDiv.length; i++){
-                          bgHmmDiv[i].style.color = "black"
-                      }
-                      var selectDiv=document.querySelectorAll(".selection>select")
-                      for(let i=0; i<selectDiv.length; i++){
-                          selectDiv[i].style.color = "black"
-                      }
-                      var THEME=document.getElementById("theme")
-                      THEME.innerText="Dark"
-                      isDark=false;
+                var isDark = true;
+                function myFunction() {
+                    if (isDark) {
+                        var bgAll = document.getElementsByTagName("body")
+                        bgAll[0].style.backgroundColor = "#fff"
+                        var bgHmmDiv = document.querySelectorAll("#hmm>div")
+                        for (let i = 0; i < bgHmmDiv.length; i++) {
+                            bgHmmDiv[i].style.color = "black"
+                        }
+                        var selectDiv = document.querySelectorAll(".selection>select")
+                        for (let i = 0; i < selectDiv.length; i++) {
+                            selectDiv[i].style.color = "black"
+                        }
+                        var THEME = document.getElementById("theme")
+                        THEME.innerText = "Dark"
+                        isDark = false;
                     }
-                    else{
-                      var bgAll=document.getElementsByTagName("body")
-                      bgAll[0].style.backgroundColor="#191d28"
-                      var bgHmmDiv=document.querySelectorAll("#hmm>div")
-                      for(let i=0; i<bgHmmDiv.length; i++){
-                          bgHmmDiv[i].style.color = "white"
-                      }
-                      var selectDiv=document.querySelectorAll(".selection>select")
-                      for(let i=0; i<selectDiv.length; i++){
-                          selectDiv[i].style.color = "white"
-                      }
-                      var THEME=document.getElementById("theme")
-                      THEME.innerText="Light"
-                      isDark=true;
+                    else {
+                        var bgAll = document.getElementsByTagName("body")
+                        bgAll[0].style.backgroundColor = "#191d28"
+                        var bgHmmDiv = document.querySelectorAll("#hmm>div")
+                        for (let i = 0; i < bgHmmDiv.length; i++) {
+                            bgHmmDiv[i].style.color = "white"
+                        }
+                        var selectDiv = document.querySelectorAll(".selection>select")
+                        for (let i = 0; i < selectDiv.length; i++) {
+                            selectDiv[i].style.color = "white"
+                        }
+                        var THEME = document.getElementById("theme")
+                        THEME.innerText = "Light"
+                        isDark = true;
                     }
                 }
+                var time=document.getElementById("timer")
+                function seconds(){
+                    var p=60;
+                    setInterval(()=>{
+                      time.innerText=`${p--}`;
+                      if(p==1)p=60;
+                    },1000)
+                }
+                seconds();
             </script>
         </div>
         <div class="footer">Copyright © 2019 HodlInfo.com</div>

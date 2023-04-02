@@ -1,55 +1,67 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap');
-body{
-    background-color: #191d28; 
+
+body {
+    background-color: #191d28;
 }
-.header{
+
+.header {
     display: flex;
     width: 100%;
-    align-items:center;
+    align-items: center;
     justify-content: space-around;
 }
-.footer{
-   margin-top: 20px;
-   width: 100%;
-   display: flex;
-   text-align: center;
-   align-items:center;
-   justify-content: space-around;
+
+.footer {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    color:#5dc7c2;
+    font-weight: bold;
 }
-.info{
-    width:110vw;
+
+.info {
+    width: 110vw;
 }
-#hmm{
+
+#hmm {
     margin-left: 80px;
     width: 80%;
 }
-#hmm div{
-width: 100%;
-align-items:center;
-justify-content: space-around;
-text-align: center;
+
+#hmm div {
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
 }
-#hmm > div{
+
+#hmm>div {
     /* max-width: 100rem; */
     margin: 20px 0px;
     padding: 10px 0px;
     border-radius: 10px;
-    background-color: rgba(200, 200, 200,0.25);
+    background-color: rgba(200, 200, 200, 0.25);
     font-family: Oswald;
     font-size: 24px;
-    color:#fff;
+    color: #fff;
 }
-#t-head{
+
+#t-head {
     margin-left: 80px;
     width: 80%;
     text-align: center;
 }
-#t-head div{
+
+#t-head div {
     width: 100%;
-    align-items:center;
+    align-items: center;
     justify-content: space-around;
 }
-#t-head>div{
+
+#t-head>div {
     max-width: 100rem;
     margin: 20px 0px;
     padding: 10px 0px;
@@ -58,31 +70,36 @@ text-align: center;
     font-family: Oswald;
     font-size: 24px;
     color: rgba(168, 160, 160, 0.25);
-
 }
-.m-head{
+
+.m-head {
     display: flex;
 }
-.selection>select{
+
+.selection>select {
     margin: 10px;
     color: #fff;
-    background-color: rgba(200, 200, 200,0.25);
+    background-color: rgba(200, 200, 200, 0.25);
     border: none;
     padding: 5px 5px;
     border-radius: 5px;
 }
-h1{
-margin-bottom: 0;
-margin-left: 0;
+
+h1 {
+    margin-bottom: 0;
+    margin-left: 0;
 }
-h5{
+
+h5 {
     margin-top: 0;
     margin-left: 0;
 }
+
 span{
-    color: rgba(200, 200, 200,0.25);
+    color: rgba(168, 160, 160, 0.25);
 }
-#telegram{
+
+#telegram {
     margin: 5px;
     padding: 5px;
     background-color: #5dc7c2;
@@ -91,11 +108,13 @@ span{
     box-shadow: none;
     cursor: pointer;
 }
-#telegram>a{
+
+#telegram>a {
     color: #fff;
     text-decoration: none;
 }
-#timer{
+
+#timer {
     margin: 5px;
     padding: 5px;
     border-radius: 50%;
@@ -104,7 +123,8 @@ span{
     box-shadow: none;
     cursor: pointer;
 }
-#theme{
+
+#theme {
     margin: 5px;
     padding: 5px;
     background-color: #5dc7c2;
@@ -114,9 +134,31 @@ span{
     cursor: pointer;
     color: #fff;
 }
-.b-head{
+
+.b-head {
     display: flex;
 }
-b-head>div{
-    
+
+@media only screen and (max-width: 800px) {
+    #hmm {
+        margin-left: 20px;
+    }
+
+    #t-head {
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    .header {
+        flex-direction: column;
+    }
+
+    #t-head>div {
+        font-size: 15px;
+    }
+    #hmm>div{
+        font-size: 10px;
+    }
 }
