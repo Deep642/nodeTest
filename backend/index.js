@@ -13,7 +13,7 @@ app.use((req, res, next) => {
   });
 import router from "./router.js";
 app.get("/",router);
-// app.listen(4000);
+app.listen(4000);
  
 import mongoose from "mongoose";
 mongoose.connect(`mongodb+srv://nodeTest:nodeTest@cluster0.bur4lju.mongodb.net/new?retryWrites=true&w=majority`);
